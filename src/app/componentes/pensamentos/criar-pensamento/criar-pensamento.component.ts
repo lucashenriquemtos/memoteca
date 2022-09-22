@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CriarPensamentoComponent implements OnInit {
 
   pensamento = {
-    id: '1',
+    id: 1,
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: ''
@@ -24,7 +24,7 @@ export class CriarPensamentoComponent implements OnInit {
 
   cancelar() {
     this.pensamento = {
-      id: '',
+      id: 0,
       conteudo : '',
       autoria: '',
       modelo: ''
