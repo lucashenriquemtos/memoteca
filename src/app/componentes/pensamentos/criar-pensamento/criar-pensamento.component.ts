@@ -21,4 +21,13 @@ export class CriarPensamentoComponent implements OnInit {
   salvarPensamento() {
     alert("Pensamento salvo")
   }
+
+  cancelar() {
+    this.pensamento = {
+      id: '',
+      conteudo : '',
+      autoria: '',
+      modelo: ''
+    }
+  }
 }
