@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Pensamento} from "../pensamento";
 
 @Component({
   selector: 'app-listar-pensamentos',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentosComponent implements OnInit {
 
-  listaPensamentos = [
+  listaPensamentos: Pensamento[] = [];
 
-  ];
   constructor() { }
 
   ngOnInit(): void {
