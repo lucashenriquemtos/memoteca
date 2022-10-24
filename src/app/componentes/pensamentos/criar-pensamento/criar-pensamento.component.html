@@ -1,5 +1,5 @@
 <section class="container criar-pensamentos ff-inter" xmlns="http://www.w3.org/1999/html">
-  <header  class="header">
+  <header class="header">
     <h2>Adicione um <br> pensamento novo:</h2>
   </header>
   <form>
@@ -40,7 +40,7 @@
           <img src="../../../../assets/imagens/modelo1.png" alt="">
           <p class="conteudo">{{pensamento.conteudo}}</p>
           <p class="autoria">{{pensamento.autoria}}</p>
-        </div>conteudo
+        </div>
       </div>
       <div class="radio-modelo">
         <label for="modelo2">
@@ -82,15 +82,16 @@
           <p class="autoria">{{pensamento.autoria}}</p>
         </div>
       </div>
-      </div>
-      <div class="acoes">
-        <button
-          (click)="salvarPensamento()"
-          class="botao">Salvar</button>
-        <button
-          (click)="cancelar()"
-          routerLink="/listarPensamento"
-                class="botao">Cancelar</button>
+    </div>
+    <div class="acoes">
+      <button
+        (click)="salvarPensamento()"
+        class="botao">Salvar
+      </button>
+      <button
+        (click)="cancelar()"
+        class="botao">Cancelar
+      </button>
     </div>
   </form>
 </section>
